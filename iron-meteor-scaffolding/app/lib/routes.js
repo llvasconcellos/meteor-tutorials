@@ -10,3 +10,24 @@ Router.route('/', {
   controller: 'HomeController',
   where: 'client'
 });
+
+Router.route('/cars', {
+  name: 'carsList',
+  controller: 'CarsController',
+  action: 'list',
+  where: 'client'
+});
+
+Router.route('/cars/create', {
+  name: 'createCar',
+  controller: 'CarsController',
+  action: 'create',
+  where: 'client'
+});
+
+Router.route('/cars/:_id', {
+  name: 'editCar',
+  controller: 'CarsController',
+  action: 'edit',
+  where: 'client'
+});
