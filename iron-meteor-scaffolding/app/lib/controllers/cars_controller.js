@@ -55,5 +55,8 @@ CarsController = RouteController.extend({
   },
   create: function() {
     this.render('CreateCar', {});
+  },
+  list: function() {
+    this.render('ListCars', {});
   }
 });
